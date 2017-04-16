@@ -1,0 +1,19 @@
+{
+  "name": "data-processor",
+  "version": "1.0.0",
+  "description": "A REST backend for a data comparison and processing in house tool",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/light-bringer/data-processor.git"
+  },
+  "author": "Debapriya Das <yodebu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/light-bringer/data-processor/issues"
+  },
+  "homepage": "https://github.com/light-bringer/data-processor#readme"
+}
