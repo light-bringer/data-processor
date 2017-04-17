@@ -1,3 +1,3 @@
 module.exports = function() {
-	return 'Pl@t40rm.S3cR3T'
+	return 'mY.S3cR3T'
 }

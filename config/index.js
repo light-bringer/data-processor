@@ -11,7 +11,7 @@ if(!isThere(envFilePath))
   console.log("Environment file missing")
 else
   environmentOptions = require(envFilePath) 
-  projectName = environmentOptions.projectName || "cw-platform"
+  projectName = environmentOptions.projectName || "data-processor"
 module.exports = {
   port: environmentOptions.server.port,
   serverHost: environmentOptions.server.host + ':' +environmentOptions.server.port,
@@ -19,12 +19,5 @@ module.exports = {
   databaseHost: environmentOptions.database.host,
   databasePort: environmentOptions.database.port,
   databaseName: environmentOptions.database.name,
-  s3bucket: environmentOptions.aws.s3bucket,
-  webAppUrl: environmentOptions.web.url,
-  ldapUrl: environmentOptions.ldap.host + ":" + environmentOptions.ldap.port,
-  ldapBaseDN: environmentOptions.ldap.baseDN,
-  piUrl: environmentOptions.piServer.url,
-  pushNotification: environmentOptions.pushNotification,
-  staticFileStorage: environmentOptions.staticFileStorage,
   appDir: __dirname.match(new RegExp("(.*\/("+ projectName +")\/)(.*)$"))[1]
 }  
